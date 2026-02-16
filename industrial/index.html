@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporte Laboratorios - Ingeniería Industrial</title>
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header class="topbar">
+      <div class="topbar__brand">
+        <img src="../assets/favicon.ico" alt="Logo Centro Universitario UNE" class="brand-mark" />
+        <div>
+          <p class="brand-title">Ingeniería Industrial</p>
+          <p class="brand-subtitle">Plan 2018 · Centro Universitario UNE</p>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebarNav" aria-label="Abrir menú">
+        <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="line line1" d="M3 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+          <path class="line line2" d="M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+          <path class="line line3" d="M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebarNav">
+        <nav aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#resumen" class="nav-list__section">1. Resumen Ejecutivo</a></li>
+            <li><a href="#asignaturas" class="nav-list__section">2. Asignaturas Críticas</a></li>
+            <li><a href="#areas" class="nav-list__section">3. Áreas de Estandarización</a></li>
+            <li><a href="#area-a" class="nav-list__subsection">A. Métodos y Manufactura</a></li>
+            <li><a href="#area-b" class="nav-list__subsection">B. Automatización y Electrónica</a></li>
+            <li><a href="#area-c" class="nav-list__subsection">C. Ciencias Básicas y Calidad</a></li>
+            <li><a href="#area-d" class="nav-list__subsection">D. Cómputo Avanzado</a></li>
+            <li class="nav-list__separator"></li>
+            <li><a href="#fuente" class="nav-list__meta">Fuente del análisis</a></li>
+            <li><a href="../index.html" class="nav-list__meta">← Volver al inicio</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main-content" class="content">
+        <nav class="breadcrumbs card" aria-label="Breadcrumb">
+          <a href="../index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="index.html" aria-current="page">Industrial</a>
+        </nav>
+
+        <section class="hero">
+          <p class="eyebrow">Análisis de Requerimientos de Manual de Prácticas Estandarizado</p>
+          <h1>Ingeniería Industrial</h1>
+          <p class="lead">Objetivo: Identificar asignaturas susceptibles de estandarización de manuales para el aseguramiento de la
+            calidad académica.</p>
+        </section>
+
+        <section id="resumen" class="card section-anchor">
+          <h2>1. Asignaturas Críticas por Cuatrimestre</h2>
+          <p>Se listan únicamente las materias que requieren horas de práctica (Laboratorio/Taller).</p>
+        </section>
+
+        <section id="asignaturas" class="card section-anchor">
+          <h3>Primer a Tercer Cuatrimestre (Fundamentos Técnicos)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cuatrimestre</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Prioridad del Manual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1º</td><td><strong>IND103</strong></td><td><strong>Computación I</strong></td><td><strong>Alta</strong> (Alfabetización digital técnica)</td></tr>
+                <tr><td>2º</td><td><strong>IND202</strong></td><td><strong>Computación II</strong></td><td><strong>Alta</strong> (Programación básica)</td></tr>
+                <tr><td>2º</td><td><strong>IND204</strong></td><td><strong>Física</strong></td><td>Media (Mecánica clásica)</td></tr>
+                <tr><td>2º</td><td><strong>IND205</strong></td><td><strong>Química</strong></td><td><strong>Crítica (Normativa RVOE)</strong></td></tr>
+                <tr><td>3º</td><td><strong>IND302</strong></td><td><strong>Computación III</strong></td><td><strong>Alta</strong> (Dibujo CAD 2D/3D)</td></tr>
+                <tr><td>3º</td><td><strong>IND303</strong></td><td><strong>Estudio del Trabajo I</strong></td><td><strong>Alta (Core Ingeniería)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Cuarto a Sexto Cuatrimestre (Ingeniería Aplicada)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cuatrimestre</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Prioridad del Manual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>4º</td><td><strong>IND403</strong></td><td><strong>Estudio del Trabajo II</strong></td><td><strong>Alta (Core Ingeniería)</strong></td></tr>
+                <tr><td>4º</td><td><strong>IND404</strong></td><td><strong>Electricidad y Magnetismo</strong></td><td><strong>Crítica (Normativa RVOE)</strong></td></tr>
+                <tr><td>5º</td><td><strong>IND502</strong></td><td><strong>Procesos de Manufactura I</strong></td><td><strong>Crítica (Identidad Ing.)</strong></td></tr>
+                <tr><td>5º</td><td><strong>IND503</strong></td><td><strong>Ciencias de Materiales</strong></td><td>Media (Ensayos destructivos)</td></tr>
+                <tr><td>5º</td><td><strong>IND504</strong></td><td><strong>Electricidad Industrial</strong></td><td><strong>Crítica (Seguridad y RVOE)</strong></td></tr>
+                <tr><td>6º</td><td><strong>IND604</strong></td><td><strong>Termodinámica I</strong></td><td>Media (Banco de pruebas térmicas)</td></tr>
+                <tr><td>6º</td><td><strong>IND606</strong></td><td><strong>Calidad</strong></td><td><strong>Alta (Herramientas estadísticas)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Séptimo a Noveno Cuatrimestre (Especialización)</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cuatrimestre</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Prioridad del Manual</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>7º</td><td><strong>IND701</strong></td><td><strong>Control de Calidad</strong></td><td><strong>Alta (Metrología)</strong></td></tr>
+                <tr><td>7º</td><td><strong>IND702</strong></td><td><strong>Automatización</strong></td><td><strong>Crítica (Tecnología Punta)</strong></td></tr>
+                <tr><td>7º</td><td><strong>IND706</strong></td><td><strong>Ergonomía y Seg. Ind.</strong></td><td><strong>Alta (Normativa STPS)</strong></td></tr>
+                <tr><td>8º</td><td><strong>IND801</strong></td><td><strong>Servomecanismos</strong></td><td><strong>Crítica (Robótica)</strong></td></tr>
+                <tr><td>8º</td><td><strong>IND805</strong></td><td><strong>Inspección y Pruebas</strong></td><td>Media (Calidad avanzada)</td></tr>
+                <tr><td>8º</td><td><strong>IND806</strong></td><td><strong>Op. de Procesos Unitarios</strong></td><td>Media (Fluidos y Calor)</td></tr>
+                <tr><td>9º</td><td><strong>IND902</strong></td><td><strong>Diseño de Planta</strong></td><td><strong>Alta (Simulación Software)</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="areas" class="card section-anchor">
+          <h2>2. Clasificación por Áreas de Estandarización</h2>
+          <p>Para facilitar la asignación de responsables, las materias prioritarias se agrupan en 4 laboratorios tipo:</p>
+
+          <h4 id="area-a" class="section-anchor">A. Laboratorio de Métodos y Manufactura</h4>
+          <ul class="bullet-list">
+            <li>Estudio del Trabajo I: Diagramas, ensamble manual.</li>
+            <li>Estudio del Trabajo II: Tiempos predeterminados, balanceo de líneas.</li>
+            <li>Procesos de Manufactura I: Torno, fresadora, soldadura (o simuladores).</li>
+            <li>Ergonomía: Antropometría, análisis de ruido e iluminación.</li>
+          </ul>
+
+          <h4 id="area-b" class="section-anchor">B. Laboratorio de Automatización y Electrónica</h4>
+          <ul class="bullet-list">
+            <li>Electricidad y Magnetismo: Circuitos básicos.</li>
+            <li>Electricidad Industrial: Motores, tableros de control.</li>
+            <li>Automatización: PLC, Neumática, Hidráulica.</li>
+            <li>Servomecanismos: Robótica, actuadores.</li>
+          </ul>
+
+          <h4 id="area-c" class="section-anchor">C. Laboratorio de Ciencias Básicas y Calidad</h4>
+          <ul class="bullet-list">
+            <li>Química (Obligatoria A-T).</li>
+            <li>Física: Mecánica.</li>
+            <li>Calidad / Control de Calidad / Inspección: Vernier, micrómetro, durómetros.</li>
+            <li>Ciencias de Materiales.</li>
+          </ul>
+
+          <h4 id="area-d" class="section-anchor">D. Laboratorio de Cómputo Avanzado</h4>
+          <ul class="bullet-list">
+            <li>Computación I, II, III: Ofimática, Programación, CAD.</li>
+            <li>Diseño de Planta: Software de simulación (ej. FlexSim, ProModel).</li>
+          </ul>
+        </section>
+
+        <section id="fuente" class="card source-note section-anchor">
+          <h2>Fuente</h2>
+          <p>
+            Este análisis se basa en el documento <strong>"Plan de Estudios.Ingenieria Industrial.SICyT.Plan 2019.Escolarizado"</strong>.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/script.js"></script>
+  </body>
+</html>

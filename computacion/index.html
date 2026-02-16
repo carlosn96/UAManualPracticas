@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Análisis de Laboratorios - Ingeniería en Computación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header class="topbar">
+      <div class="topbar__brand">
+        <img src="../assets/favicon.ico" alt="Logo Centro Universitario UNE" class="brand-mark" />
+        <div>
+          <p class="brand-title">Ingeniería en Computación</p>
+          <p class="brand-subtitle">Plan 22B · Universidad de Guadalajara / Centro Universitario UNE</p>
+        </div>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="sidebarNav" aria-label="Abrir menú">
+        <svg class="hamburger" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path class="line line1" d="M3 6h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+          <path class="line line2" d="M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+          <path class="line line3" d="M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"></path>
+        </svg>
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebarNav">
+        <nav aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#resumen" class="nav-list__section">1. Resumen Ejecutivo</a></li>
+            <li><a href="#relacion" class="nav-list__section">2. Relación Detallada</a></li>
+            <li><a href="#lab-a" class="nav-list__subsection">A. Ciencias Básicas y Electrónica</a></li>
+            <li><a href="#lab-b" class="nav-list__subsection">B. Cómputo y Software</a></li>
+            <li><a href="#lab-c" class="nav-list__subsection">C. Redes y Arquitectura</a></li>
+            <li><a href="#recomendaciones" class="nav-list__section">3. Recomendaciones</a></li>
+            <li class="nav-list__separator"></li>
+            <li><a href="#fuente" class="nav-list__meta">Fuente del análisis</a></li>
+            <li><a href="../index.html" class="nav-list__meta">← Volver al inicio</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="main-content" class="content">
+        <nav class="breadcrumbs card" aria-label="Breadcrumb">
+          <a href="../index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="index.html" aria-current="page">Computación</a>
+        </nav>
+
+        <section class="hero">
+          <p class="eyebrow">Análisis de Requerimientos de Manual de Prácticas Estandarizado</p>
+          <h1>Ingeniería en Computación</h1>
+          <p class="lead">
+            Objetivo: Identificar asignaturas susceptibles de estandarización de manuales para el aseguramiento de la
+            calidad académica y definición del <strong>Stack Tecnológico Institucional</strong>.
+          </p>
+        </section>
+
+        <section id="resumen" class="card section-anchor">
+          <h2>1. Resumen Ejecutivo</h2>
+          <p>
+            Del total de asignaturas analizadas en el mapa curricular, se han identificado
+            <strong>23 Unidades de Aprendizaje</strong> que requieren manual de prácticas.
+          </p>
+          <p>Se propone la siguiente división:</p>
+          <ul class="bullet-list">
+            <li><strong>Laboratorio de Ciencias Básicas y Electrónica (Hardware):</strong> 4 Asignaturas.</li>
+            <li><strong>Laboratorio de Cómputo / Desarrollo de Software:</strong> 15 Asignaturas.</li>
+            <li><strong>Laboratorio de Redes y Arquitectura:</strong> 4 Asignaturas.</li>
+          </ul>
+        </section>
+
+        <section id="relacion" class="section-anchor">
+          <h2>2. Relación Detallada de Asignaturas por Tipo de Laboratorio</h2>
+        </section>
+
+        <section id="lab-a" class="card section-anchor">
+          <h3>A. Laboratorio de Ciencias Básicas, Física y Electrónica</h3>
+          <p class="requirements">
+            Requieren: Mesas de trabajo, multímetros, osciloscopios, fuentes de poder, componentes electrónicos,
+            equipo de mecánica y óptica.
+          </p>
+
+          <div class="table-wrap" role="region" aria-label="Tabla de Ciencias Básicas, Física y Electrónica" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ciclo</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Hrs Totales</th>
+                  <th>Justificación Práctica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1º</td>
+                  <td>IL340</td>
+                  <td><strong>Fundamentos de Física</strong></td>
+                  <td>80</td>
+                  <td>Mediciones, vectores, cinemática y dinámica básica.</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>IL343</td>
+                  <td><strong>Mecánica</strong></td>
+                  <td>80</td>
+                  <td>Experimentos de fuerzas, movimiento rotacional y energía.</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>IL346</td>
+                  <td><strong>Circuitos Electrónicos y Electromagnetismo</strong></td>
+                  <td>80</td>
+                  <td>Armado de circuitos (RC, RL, RLC), ley de Ohm, Kirchhoff.</td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>IL363</td>
+                  <td><strong>Sistemas Digitales</strong></td>
+                  <td>80</td>
+                  <td>Compuertas lógicas, diseño combinacional y secuencial (FPGA/Protoboard).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="lab-b" class="card section-anchor">
+          <h3>B. Laboratorio de Cómputo y Desarrollo de Software</h3>
+
+          <div class="language-definitions">
+            <h4>Definición de Lenguajes</h4>
+            <ul class="bullet-list">
+              <li>
+                <strong>Nivel Básico (Ciclos 1-2):</strong> Enfoque en lógica usando <strong>Python</strong> por su baja
+                curva de aprendizaje.
+              </li>
+              <li>
+                <strong>Nivel Intermedio/Avanzado (Ciclos 3+):</strong> Enfoque en arquitectura y eficiencia usando
+                <strong>Java y C++</strong>.
+              </li>
+              <li><strong>Web (Ciclo 4+):</strong> Stack moderno (HTML5, CSS3, JS/TS, Frameworks).</li>
+            </ul>
+          </div>
+
+          <div class="table-wrap" role="region" aria-label="Tabla de Cómputo y Desarrollo de Software" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ciclo</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Hrs Totales</th>
+                  <th>Justificación Práctica y Lenguaje Definido</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1º</td>
+                  <td>15288</td>
+                  <td><strong>Fundamentos de Programación</strong></td>
+                  <td>80</td>
+                  <td>Algoritmos y lógica básica. <strong>Lenguaje: Python</strong>.</td>
+                </tr>
+                <tr>
+                  <td>2º</td>
+                  <td>IL352</td>
+                  <td><strong>Programación Estructurada</strong></td>
+                  <td>120</td>
+                  <td>Modularidad y estructuras de memoria. <strong>Lenguaje: Python (transición a C++).</strong></td>
+                </tr>
+                <tr>
+                  <td>3º</td>
+                  <td>15289</td>
+                  <td><strong>Programación Orientada a Objetos</strong></td>
+                  <td>80</td>
+                  <td>POO, Clases, Herencia. <strong>Lenguaje: Java / C++</strong>.</td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>IL348</td>
+                  <td><strong>Métodos Numéricos</strong></td>
+                  <td>80</td>
+                  <td>Simulación matemática. <strong>Lenguaje: Python (Librerías NumPy/Pandas).</strong></td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>IL354</td>
+                  <td><strong>Estructuras de Datos</strong></td>
+                  <td>120</td>
+                  <td>Manejo eficiente de memoria. <strong>Lenguaje: C++ / Java.</strong></td>
+                </tr>
+                <tr>
+                  <td>4º</td>
+                  <td>IL362</td>
+                  <td><strong>Programación para Internet</strong></td>
+                  <td>80</td>
+                  <td><strong>Stack Web:</strong> HTML5, CSS3, JavaScript, Typescript, Framework Frontend (React/Vue) y Backend (Node.js/Python).</td>
+                </tr>
+                <tr>
+                  <td>5º</td>
+                  <td>IL355</td>
+                  <td><strong>Análisis de Algoritmos</strong></td>
+                  <td>80</td>
+                  <td>Complejidad computacional. <strong>Lenguaje: C++ / Java.</strong></td>
+                </tr>
+                <tr>
+                  <td>5º</td>
+                  <td>IL356</td>
+                  <td><strong>Bases de Datos</strong></td>
+                  <td>120</td>
+                  <td>SQL Estándar y conexión a lenguajes de alto nivel (<strong>Java/Python</strong>).</td>
+                </tr>
+                <tr>
+                  <td>5º</td>
+                  <td>IL361</td>
+                  <td><strong>Fundamentos de Inteligencia Artificial</strong></td>
+                  <td>80</td>
+                  <td>Redes neuronales. <strong>Lenguaje: Python (TensorFlow/PyTorch).</strong></td>
+                </tr>
+                <tr>
+                  <td>6º</td>
+                  <td>IL358</td>
+                  <td><strong>Programación de Bajo Nivel</strong></td>
+                  <td>80</td>
+                  <td>Interacción hardware-software. <strong>Lenguaje: Ensamblador y C.</strong></td>
+                </tr>
+                <tr>
+                  <td>6º</td>
+                  <td>CB224</td>
+                  <td><strong>Ingeniería de Software</strong></td>
+                  <td>80</td>
+                  <td>Gestión del ciclo de vida (ALM). Herramientas: Git, Jira, <strong>Java/C++</strong> para patrones de diseño.</td>
+                </tr>
+                <tr>
+                  <td>6º</td>
+                  <td>IL367</td>
+                  <td><strong>Interacción Humano Computadora</strong></td>
+                  <td>80</td>
+                  <td>UI/UX. <strong>Herramientas:</strong> Figma/Adobe XD e implementación en <strong>Web Stack</strong>.</td>
+                </tr>
+                <tr>
+                  <td>8º</td>
+                  <td>IL359</td>
+                  <td><strong>Compiladores</strong></td>
+                  <td>80</td>
+                  <td>Análisis léxico/sintáctico. <strong>Lenguaje: C++ / Java.</strong></td>
+                </tr>
+                <tr>
+                  <td>8º</td>
+                  <td>IL368</td>
+                  <td><strong>Seguridad en la Información</strong></td>
+                  <td>80</td>
+                  <td>Scripts de seguridad y pentesting. <strong>Lenguaje: Python / Bash.</strong></td>
+                </tr>
+                <tr>
+                  <td>9º</td>
+                  <td>IL360</td>
+                  <td><strong>Programación Paralela y Concurrente</strong></td>
+                  <td>80</td>
+                  <td>Hilos y procesos. <strong>Lenguaje: C++ / Java.</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="lab-c" class="card section-anchor">
+          <h3>C. Laboratorio de Redes, Arquitectura y Sistemas Operativos</h3>
+          <p class="requirements">
+            Requieren: Racks, Routers/Switches (físicos o simulados como Packet Tracer), Virtualización, Hardware de
+            desensamble.
+          </p>
+
+          <div class="table-wrap" role="region" aria-label="Tabla de Redes, Arquitectura y Sistemas Operativos" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ciclo</th>
+                  <th>Clave</th>
+                  <th>Asignatura</th>
+                  <th>Hrs Totales</th>
+                  <th>Justificación Práctica</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>4º</td>
+                  <td>IL365</td>
+                  <td><strong>Arquitectura de Computadoras</strong></td>
+                  <td>80</td>
+                  <td>Organización del procesador, memorias y buses.</td>
+                </tr>
+                <tr>
+                  <td>5º</td>
+                  <td>IL364</td>
+                  <td><strong>Redes de Computadoras</strong></td>
+                  <td>80</td>
+                  <td>Configuración de LAN/WAN, modelo OSI/TCP-IP.</td>
+                </tr>
+                <tr>
+                  <td>5º</td>
+                  <td>IL366</td>
+                  <td><strong>Sistemas Operativos</strong></td>
+                  <td>120</td>
+                  <td>Gestión de procesos y scripting (<strong>Bash/PowerShell</strong>).</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="recomendaciones" class="card section-anchor">
+          <h2>3. Recomendaciones para la Estandarización Tecnológica</h2>
+          <ul class="bullet-list">
+            <li>
+              <strong>1º - 2º Semestre (Fundamentación):</strong> Uso exclusivo de <strong>Python</strong> para asegurar
+              la comprensión lógica sin la complejidad de sintaxis de lenguajes compilados.
+            </li>
+            <li>
+              <strong>3º - 9º Semestre (Profesionalización):</strong> Transición obligatoria a <strong>Java y C++</strong>
+              para el manejo estricto de tipos, memoria y POO.
+            </li>
+            <li>
+              <strong>Desarrollo Web:</strong> Estandarización del stack a tecnologías de mercado actual (ej.
+              <strong>MERN</strong>: Mongo, Express, React, Node).
+            </li>
+          </ul>
+        </section>
+
+        <section id="fuente" class="card source-note section-anchor">
+          <h2>Fuente del análisis</h2>
+          <p>
+            Este análisis se basa en el documento <strong>"Mapa Curricular Ingeniería en Computación UdeG Plan 22B"</strong>.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script src="../assets/script.js"></script>
+  </body>
+</html>
